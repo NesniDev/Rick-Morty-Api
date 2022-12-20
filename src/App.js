@@ -26,7 +26,7 @@ function App() {
         ) : (
           <>
             <img src={imageRickyMorty} alt='Rick & Morty' className='img-home' />
-            <button onClick={reqApi} className="btn-search">Buscar Personajes</button>
+            <button onClick={reqApi} className="btn-search">Ir a los Personajes</button>
           </>
         )}
       </header>

@@ -4,29 +4,38 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
   color: #738f93;
   font-size: 40px;
   font-family: fantasy, sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  /* margin-top: 0; */
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: fantasy, sans-serif;
+  font-weight: bold;
 }
 
 .img-home {
-  width: 500px;
-  padding: 50px;
+  width: 450px;
 }
 
 .btn-search {
   background-color: #1ba94c;
   color: #ffffff;
   box-shadow: 0 4px 12px rgb(27 169 76 / 50%);
-  font-size: 18.005px;
-  padding-left: 1.528em;
-  padding-right: 1.528em;
-  padding-top: 0;
-  padding-bottom: 0;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 2px 20px;
   min-height: 2.778em;
   border: none;
   cursor: pointer;
@@ -36,6 +45,28 @@ body {
   background-color: #ffffff;
   border: 1px solid #1ba94c;
   color: #1ba94c;
+  transform: scale(1.07);
+  transition: transform .5s ease-in-out;
+}
+.btn-back {
+  background-color: #738f93;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(59, 58, 77, 0.5);
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  min-height: 2.778em;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #9e9e9e;
+  border: 1px solid #3c3e44;
+  color: #ffffff;
+  transform: scale(1.2);
+  transition: transform .5s ease-in-out;
 }
 
 .characters {
@@ -48,9 +79,9 @@ body {
 
 .container-characters {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  padding-bottom: 50px;
+  gap: 10px;
 }
 
 .character-container {
@@ -63,6 +94,7 @@ body {
 
 .character-container h3 {
   margin: 10px 0;
+  margin-right: 20px;
 }
 
 .character-container h6 {
@@ -121,9 +153,10 @@ body {
 }
 
 .back-home {
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   font-size: 15px;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
